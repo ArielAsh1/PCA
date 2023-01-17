@@ -3,7 +3,6 @@
 Matrices $V^TV$ and $VV^T$ <p float="left"> 
 <img width="198" alt="image" src="https://user-images.githubusercontent.com/112930532/213006900-475def30-fe2e-49a0-aa5a-e3733f9706ef.png">
 <img width="194" alt="image" src="https://user-images.githubusercontent.com/112930532/213006920-89cfd17d-f86e-4cfe-a678-1ab6d140f7f4.png">
-2 principal component space.
 <img width="285" alt="image" src="https://user-images.githubusercontent.com/112930532/213006874-111e8da5-31a9-4b54-a6c1-457ce34a43d0.png">
 
 Reconstruction: <p float="left">
