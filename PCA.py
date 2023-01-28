@@ -13,9 +13,7 @@ class PCA:
         self.V = None
 
     def fit(self, X):
-        # suppose n << d where X is d*d shape
-        # we want to map X from dim d to dim n
-
+      
         # make the mean of the columns of the dataset to 0.
         X = X - X.mean()
         # calculate the covariance matrix
@@ -76,24 +74,6 @@ font2 = {'family': 'serif', 'color': 'black', 'size': 12}
 # plot metrics
 plot_matrix(np.dot(V_reduced.T, V_reduced), "V^T*V")  # plot V_reduced.T * V_reduced
 plot_matrix(np.dot(V_reduced, V_reduced.T), "V*V^T")  # plot V_reduced * V_reduced.T
-
-
-"""
-The differences between the two matrices:
-One difference between matrices V^TV and VV^T is the order of which they are being multiplied,
-which directly affects the final product.
-Also, we use the matrices differently in the PCA algorithm.
-
-The matrix V^TV is used to rotate the data. It holds the product of the rows of V with it's own rows.
-So we get that V has orthonormal columns V^TV= I where I is the identity matrix.
-That means that V^TV is the identity matrix and it's dimensions are the same as of V\in ℝ^{d*d}.
-
-The matrix VV^T is used to project the data on the new reduced-dimensional space
-and reconstruct the data back to it's original dimension.
-This matrix holds the product of the columns of V with it's own columns.
-Because the columns of V are the Eigenvectors, the product VV^T will have the dimension of ℝ^{r*r}.
-It is the diagonal matrix of the eigenvalues of X^TX, which indicates the variance captured by the eigenvectors in V.
-"""
 
 # projects a sample to a n - dimentional space and recontsturct it to the original space.
 def pca_reconstruction(x, n_dimentions):
