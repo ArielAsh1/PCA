@@ -1,5 +1,5 @@
 # PCA algorithm on the MNIST dataset, using numpy only
-
+Principal component Analysis- Machine learning algorithm
 The Reconstruction: <p float="left">
 <img width="190" alt="image" src="https://user-images.githubusercontent.com/112930532/213006952-8d900816-96b9-4665-bcab-524ff5cb24e9.png">
 <img width="200" alt="image" src="https://user-images.githubusercontent.com/112930532/213006973-414653ec-3e26-454c-b4fe-af5de204068f.png">
